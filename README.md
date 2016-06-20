@@ -6,11 +6,6 @@ Web版Hootsuiteで任意のユーザーのツイートを不可視にする。
 
 # Usage
 
-`ignore-set.sample.js`を`ignore-set.js`にリネーム。
+デベロッパーモードで拡張機能として追加。
 
-```
-$ npm i
-$ npm run build
-```
-
-してchromeの拡張機能として登録。
+右クリックからオプションで不可視にしたいユーザーを登録。
