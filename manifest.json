@@ -11,5 +11,9 @@
       "matches": ["https://hootsuite.com/*"],
       "js": ["js/index.js"]
     }
-  ]
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "options_page": "html/options.html"
 }

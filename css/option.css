@@ -1,0 +1,45 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
+
+article {
+  width: 500px;
+  margin: 50px auto;
+  font-size: 14px; }
+
+header {
+  width: 500px;
+  margin: 50px auto; }
+  header h1 {
+    font-weight: normal; }
+
+.ignore-member button, .ignore-registerer button {
+  vertical-align: top;
+  height: 40px;
+  margin: 0;
+  width: 100px; }
+
+.ignore-set {
+  margin-top: 20px; }
+
+.ignore-member button {
+  height: 30px; }
+.ignore-member .label {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  white-space: nowrap; }
+
+.ignore-registerer {
+  line-height: 40px;
+  vertical-align: top; }
+  .ignore-registerer input[type="text"] {
+    vertical-align: top;
+    margin: 0;
+    width: 400px;
+    height: 40px;
+    padding: 9px;
+    font-size: 14px; }
+
+/*# sourceMappingURL=option.css.map */

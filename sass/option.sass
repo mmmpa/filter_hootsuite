@@ -1,0 +1,51 @@
+$button-width: 100px
+$name-width: 400px
+$height: 40px
+$thin-height: 30px
+
+*
+  box-sizing: border-box
+  font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif
+
+article
+  width: $button-width + $name-width
+  margin: 50px auto
+  font-size: 14px
+
+header
+  width: $button-width + $name-width
+  margin: 50px auto
+  h1
+    font-weight: normal
+
+%button
+  vertical-align: top
+  height: $height
+  margin: 0
+  width: $button-width
+
+.ignore-set
+  margin-top: 20px
+
+.ignore-member
+  button
+    @extend %button
+    height: $thin-height
+  .label
+    height: $thin-height
+    line-height: $thin-height
+    padding-left: 10px
+    white-space: nowrap
+
+.ignore-registerer
+  line-height: $height
+  vertical-align: top
+  input[type="text"]
+    vertical-align: top
+    margin: 0
+    width: $name-width
+    height: $height
+    padding: 9px
+    font-size: 14px
+  button
+    @extend %button

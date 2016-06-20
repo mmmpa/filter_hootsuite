@@ -1,7 +1,11 @@
 import Selector from './selector';
-import {ignoreSet} from './ignore-set';
+import {store} from '../util/store';
 
 export default class Filter {
+  constructor() {
+    store.loadIgnoreSet((v) => this.ignoreSet = v);
+  }
+
   append(dom) {
     this.detect(dom);
   }
@@ -26,11 +30,17 @@ export default class Filter {
       return;
     }
 
-    matched.forEach((name) => {
-      if (ignoreSet.has(name)) {
+    try {
+      matched.forEach((name) => {
+        if (!this.ignoreSet.has(name)) {
+          return;
+        }
         dom.style.display = 'none';
-      }
-    });
+        throw 'done'
+      });
+    } catch (e) {
+      return null;
+    }
   }
 }
 
